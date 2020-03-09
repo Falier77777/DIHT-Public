@@ -1,4 +1,4 @@
-\documentclass[12pt; a4paper]{article}
+\documentclass[12pt; a4paper]{book}
 \usepackage{graphicx} %for pic
 \usepackage[utf8x]{inputenc}
 \usepackage[russian]{babel} % for rus
@@ -12,26 +12,19 @@
 \usepackage{amsmath} 
 
 \begin{document} 
-\begin{titlepage}
-\begin{center}
-\large\textbf{Московский Физико-Технический Институт}\\
-\large\textbf{(государственный университет)}
-\vfill
-\line(1,0){350}\\[2mm]
-\huge\textbf{Технологии программирования\\ 2 семестр, 2020 год}\\
-\line(1,0){350}\\[2mm]
-\vfill
-\line(1,0){350}\\[1mm]
-{\normalsize Лектор: Старичков Никита\\\
-Редакторы:  \href{https://vk.com/akira33333}{Фреик Александр} \href{https://github.com/Falier77777}{git}}\\
-\large ФПМИ\\
-\line(1,0){350}\\[1mm]
-\end{center}
-\end{titlepage}
-\newpage
-\fancyhead[L] {Проектирование ПО}
-\section{Проектирование ПО (програмного обеспечения)}
-Этапы проектирования
+
+\frontmatter
+\title{Технологии программирования\\ 2 семестр}
+\author{Автор} 
+\date{Весна 2020}
+\maketitle
+
+\tableofcontents
+
+\mainmatter
+%\fancyhead[L] {Проектирование ПО}
+\chapter{Проектирование ПО}
+\section{Этапы проектирования}
 \begin{enumerate}
 \item Формирование требований
 \item Разработка концепции
@@ -88,7 +81,6 @@
 \item[-] Иногда менее производительная
 \item[-] \textbf{подготовка отчета по этапу}
 \end{enumerate}
-
 \subsection{Технический проект}
 \begin{enumerate}
 \item Разработка частей системы
@@ -142,3 +134,23 @@
  
 \hypersetup{linkcolor=linkcolor,urlcolor=urlcolor, colorlinks=true}
 
+%%%%%%%%%%%%%%%%%%%%%%
+Редакторы:  \href{https://vk.com/akira33333}{Фреик Александр} \href{https://github.com/Falier77777}{git}\\
+
+\begin{titlepage}
+\begin{center}
+\large\textbf{Московский Физико-Технический Институт}\\
+\large\textbf{(государственный университет)}
+\vfill
+\line(1,0){350}\\[2mm]
+\huge\textbf{Технологии программирования\\ 2 семестр, 2020 год}\\
+\line(1,0){350}\\[2mm]
+\vfill
+\line(1,0){350}\\[1mm]
+{\normalsize Лектор: Старичков Никита\\\
+Редакторы:  \href{https://vk.com/akira33333}{Фреик Александр} \href{https://github.com/Falier77777}{git}}\\
+\large ФПМИ\\
+\line(1,0){350}\\[1mm]
+\end{center}
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%
