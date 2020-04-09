@@ -45,7 +45,20 @@
 \usepackage[normalem]{ulem}  % to make text crossed out with \sout{} command
 
 \begin{document} 
+
+\let\ms\mathscr  % let use \ms instead of \mathscr 
+\let\ol\overline  % (one more \overline{\mathscr{L}} and I maybe kill myself)
+\let\bs\boldsymbol
+\let\ra\rightarrow
+\let\b\begin
+\let\e\end
+\let\it\item
+\let\subs\subsection
+%%%%%%%%
+
 \large
+
+
 \title{Линейная Алгебра\\ 2 семестр}
 \author{Фреик Александр Андреевич} 
 \date{Весна 2020}
@@ -75,7 +88,7 @@ P.S.  Он не пустой, промотайте вниз, пожалйста
 \section{\Large 3 Пункт}
 \subsection{Аксиоматика линейного пространства}
 Определение. Множество $\mathscr{L}$ мы назовем линейным пространством, а его элементы — векторами, еcли:
-\begin{enumerate}
+\b{enumerate}
 \item Задан закон (операция сложения) по которому любым двум элементам х и у из  $\mathscr{L}$ сопоставляется элемент, называемый их суммой и обозначаемый 
 \item Задан закон (операция умножения на число), по которому элементу х из $\mathscr{L}$ и числу $\alpha$ сопоставляется элемент из $\mathscr{L}$, называемый произведением х на а и обозна­чаемый а х .
 \item Для любых элементов х, у и г из для любых чисел $\alpha$ и $\beta$ выполнены следующие требования (или аксиомы):
@@ -89,7 +102,7 @@ P.S.  Он не пустой, промотайте вниз, пожалйста
 \item $ \alpha( \beta x) = (\alpha \beta) x$
 \item $1x = x$
 \end{enumerate}
-\end{enumerate}
+\e{enumerate}
 
 Если в п. 2)мы ограничиваемся вещественными чис­лами, то $\mathscr{L}$ называется вещественным линейным прост­ранством, если же определено умножение на любое комплексное число, то линейное пространство называется комплексным.
 Вектор -х называется противоположным вектору х.
@@ -446,7 +459,7 @@ dim2( \mathscr{L^1}+\ldots+\mathscr{L^s}) \leq dim\mathscr{L^1}+\ldots+dim\maths
     \end{equation}
 \end{glob_def}
 Линейное отображение мы будем называть линейным преобразова­нием, если пространства
- $\mathscr{L}$ и $\overline{\mathscr{L}}$ совпадают.
+ $\mathscr{L}$ и $\ol{\ms{L}}$ совпадают.
  
 \begin{sug}\label{sug}
 При линейном отображении $A: L \rightarrow \overline{L} $ и­  линейное подпространство переходит в линейное подпрост­ранство причем
